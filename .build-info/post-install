@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [ "${C_LIBDIRS}" != "lib" ];then
+  mkdir -p  ${3}/usr/lib/
+  ln -sr ${3}/usr/${C_LIBDIRS}/mrtg2 ${3}/usr/lib/
+fi;
